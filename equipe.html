@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <title>L'équipe - Crèche Les P’tits Bateaux</title>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-[#FAF6F1]">
+  <!-- Navigation -->
+  <header>
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <!-- Logo -->
+          <div class="flex-shrink-0 text-[#6C8B92] text-2xl font-bold">
+            <a href="#">Crèche - Les P’tits Bateaux</a>
+          </div>
+          <!-- Menu button (mobile) -->
+          <div class="md:hidden">
+            <button id="menu-button" class="text-[#6C8B92] focus:outline-none focus:ring-2 focus:ring-[#F4CBB2]">
+              <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          <!-- Navigation Links -->
+          <ul id="nav-links"
+              class="hidden md:flex md:space-x-6 text-xl font-semibold items-center">
+            <li><a href="index.html" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Accueil</a></li>
+            <li><a href="decouvrir.html" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Découvrir la crèche</a></li>
+            <li><a href="#" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Équipe</a></li>
+            <li><a href="#" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Pré-Inscription</a></li>
+            <li><a href="#" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <ul class="flex flex-col space-y-2 text-lg font-semibold">
+          <li><a href="index.html" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Accueil</a></li>
+          <li><a href="decouvrir.html" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Découvrir la crèche</a></li>
+          <li><a href="#" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Équipe</a></li>
+          <li><a href="#" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Pré-Inscription</a></li>
+          <li><a href="#" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Nous contacter</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <script>
+      const menuBtn = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+  
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </header>
+
+  <!-- Titre -->
+  <section class="py-16 text-center">
+    <h1 class="text-5xl font-bold text-[#F4AFA1] animate-fade-in-up">Notre équipe</h1>
+    <p class="mt-4 text-lg text-gray-600 animate-fade-in-up delay-200">Une équipe bienveillante et qualifiée pour accompagner votre enfant.</p>
+  </section>
+
+  <!-- Maria mise en avant -->
+  <section class="container mx-auto px-6 pb-10">
+    <div class="bg-white rounded-lg shadow-xl p-10 text-center md:text-left md:flex items-center animate-fade-in-up">
+      <div class="md:w-1/3 mb-6 md:mb-0">
+        <img src="./images/portrait-maria.png" alt="Portrait de Maria Gallardo" class="rounded-full mx-auto md:mx-0 shadow-lg w-48 h-48 object-cover" />
+      </div>
+      <div class="md:ml-10 md:w-2/3">
+        <h2 class="text-3xl font-bold text-[#6C8B92]">Maria Gallardo</h2>
+        <p class="text-[#F2B56B] font-medium text-lg mt-2">Gestionnaire de la crèche</p>
+        <p class="mt-4 text-gray-600">
+          Fondatrice de la crèche, Maria veille à son bon fonctionnement, à la qualité de l’accueil et à la cohésion de l’équipe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section class="container mx-auto px-6 pb-20">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Directrice -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-fade-in-up">
+        <h3 class="text-2xl font-semibold text-[#6C8B92]">Sophie Laurent</h3>
+        <p class="text-[#F2B56B] font-medium">Directrice & Éducatrice de jeunes enfants</p>
+        <p class="mt-2 text-gray-600">Elle supervise l’équipe et veille au bon développement des enfants dans un cadre éducatif sécurisant.</p>
+      </div>
+      <!-- Educatrice -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-fade-in-up">
+        <h3 class="text-2xl font-semibold text-[#6C8B92]">Camille Dupuis</h3>
+        <p class="text-[#F2B56B] font-medium">Éducatrice de jeunes enfants</p>
+        <p class="mt-2 text-gray-600">Camille accompagne les enfants dans leurs apprentissages et anime les ateliers pédagogiques.</p>
+      </div>
+      <!-- Auxiliaires -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-fade-in-up">
+        <h3 class="text-2xl font-semibold text-[#6C8B92]">Anaïs Morel</h3>
+        <p class="text-[#F2B56B] font-medium">Auxiliaire de puériculture</p>
+        <p class="mt-2 text-gray-600">Anaïs assure les soins quotidiens et accompagne les enfants avec douceur et rigueur.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-fade-in-up">
+        <h3 class="text-2xl font-semibold text-[#6C8B92]">Lila Chouin</h3>
+        <p class="text-[#F2B56B] font-medium">Auxiliaire de puériculture</p>
+        <p class="mt-2 text-gray-600">Lila apporte soutien, écoute et sourire aux enfants et à leurs familles chaque jour.</p>
+      </div>
+      <!-- CAP -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-fade-in-up">
+        <h3 class="text-2xl font-semibold text-[#6C8B92]">Nina Roux</h3>
+        <p class="text-[#F2B56B] font-medium">CAP Petite enfance</p>
+        <p class="mt-2 text-gray-600">Nina soutient les éducateurs et participe activement à toutes les routines de la journée.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center animate-fade-in-up">
+        <h3 class="text-2xl font-semibold text-[#6C8B92]">Inès Delcourt</h3>
+        <p class="text-[#F2B56B] font-medium">CAP Petite enfance</p>
+        <p class="mt-2 text-gray-600">Inès est un repère rassurant pour les tout-petits et veille à leur sécurité et leur bien-être.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-[#6C8B92] text-white text-center py-6 mt-20">
+    <p>© 2025 Crèche Les P’tits Bateaux - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
