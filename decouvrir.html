@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <title>Découvrir - Crèche Les P’tits Bateaux</title>
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes scaleIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+    .animate-scale-in { animation: scaleIn 0.6s ease-out forwards; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-400 { animation-delay: 0.4s; }
+  </style>
+</head>
+<body class="bg-[#FAF6F1]">
+  <!-- Navigation -->
+  <header>
+    <nav class="bg-[#FFFFFF] p-8 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-[#6C8B92] text-2xl font-bold">Crèche - Les P’tits Bateaux</a>
+            <ul class="flex space-x-6 text-xl font-semibold">
+                <li><a href="index.html" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Accueil</a></li>
+                <li><a href="decouvrir.html" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Découvrir la crèche</a></li>
+                <li><a href="#" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Équipe</a></li>
+                <li><a href="#" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Pré-Inscription</a></li>
+                <li><a href="#" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Nous contacter</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+
+  <!-- Présentation fondatrice -->
+  <section class="py-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold text-[#F4AFA1] animate-fade-in-up">
+          L'histoire de <span class="text-[#F2B56B]">Maria Gallardo</span>
+        </h1>
+        <p class="mt-6 text-lg text-gray-600 animate-fade-in-up delay-200">
+          Passionnée par l’éducation et le bien-être des enfants, Maria a fondé la crèche avec une vision : créer un cocon de douceur, de jeu et de sécurité.
+        </p>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="./images/photo-creche-1.jpg" alt="Maria Gallardo avec les enfants" class="rounded-lg shadow-lg animate-scale-in" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Valeurs -->
+  <section class="bg-white py-20">
+    <div class="container mx-auto text-center px-6">
+      <h2 class="text-4xl font-bold text-[#F2B56B] animate-fade-in-up">Nos valeurs</h2>
+      <div class="grid md:grid-cols-3 gap-10 mt-10">
+        <div class="p-6 bg-[#F4EAE4] rounded-lg shadow-md animate-fade-in-up">
+          <h3 class="text-2xl font-semibold text-[#6C8B92]">❤️ Bienveillance</h3>
+          <p class="mt-2 text-gray-600">Un accueil respectueux et doux pour chaque enfant.</p>
+        </div>
+        <div class="p-6 bg-[#F4EAE4] rounded-lg shadow-md animate-fade-in-up delay-200">
+          <h3 class="text-2xl font-semibold text-[#6C8B92]">📚 Éveil éducatif</h3>
+          <p class="mt-2 text-gray-600">Apprendre en jouant, à son rythme.</p>
+        </div>
+        <div class="p-6 bg-[#F4EAE4] rounded-lg shadow-md animate-fade-in-up delay-400">
+          <h3 class="text-2xl font-semibold text-[#6C8B92]">🌿 Nature</h3>
+          <p class="mt-2 text-gray-600">Des activités en plein air et du respect de l’environnement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activités -->
+  <section class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-[#F4AFA1] animate-fade-in-up">Nos activités quotidiennes</h2>
+      <div class="grid md:grid-cols-3 gap-10 mt-10">
+        <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up">
+          <h3 class="text-xl font-semibold text-[#6C8B92]">🎨 Ateliers créatifs</h3>
+          <p class="mt-2 text-gray-600">Peinture, pâte à sel, dessin libre...</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up delay-200">
+          <h3 class="text-xl font-semibold text-[#6C8B92]">📖 Histoires & chansons</h3>
+          <p class="mt-2 text-gray-600">Moments de lecture, comptines et marionnettes.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-up delay-400">
+          <h3 class="text-xl font-semibold text-[#6C8B92]">🌿 Découverte du jardin</h3>
+          <p class="mt-2 text-gray-600">Semis, jeux sensoriels, explorations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-[#6C8B92] text-white text-center py-6 mt-20">
+    <p>© 2025 Crèche Les P’tits Bateaux - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
