@@ -9,18 +9,54 @@
 </head>
 <body class="bg-[#FAF6F1]">
     <header>
-        <nav class="bg-[#FFFFFF] p-8 shadow-lg">
-            <div class="container mx-auto flex justify-between items-center">
-                <a href="#" class="text-[#6C8B92] text-2xl font-bold">Crèche - Les P’tits Bateaux</a>
-                <ul class="flex space-x-6 text-xl font-semibold">
-                    <li><a href="index.html" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Accueil</a></li>
-                    <li><a href="decouvrir.html" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Découvrir la crèche</a></li>
-                    <li><a href="#" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Équipe</a></li>
-                    <li><a href="#" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Pré-Inscription</a></li>
-                    <li><a href="#" class="text-[#6C8B92] px-8 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-[#F4CBB2] hover:text-white">Nous contacter</a></li>
-                </ul>
+        <nav class="bg-white shadow-lg">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+              <!-- Logo -->
+              <div class="flex-shrink-0 text-[#6C8B92] text-2xl font-bold">
+                <a href="#">Crèche - Les P’tits Bateaux</a>
+              </div>
+              <!-- Menu button (mobile) -->
+              <div class="md:hidden">
+                <button id="menu-button" class="text-[#6C8B92] focus:outline-none focus:ring-2 focus:ring-[#F4CBB2]">
+                  <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
+              <!-- Navigation Links -->
+              <ul id="nav-links"
+                  class="hidden md:flex md:space-x-6 text-xl font-semibold items-center">
+                <li><a href="index.html" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Accueil</a></li>
+                <li><a href="decouvrir.html" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Découvrir la crèche</a></li>
+                <li><a href="#" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Équipe</a></li>
+                <li><a href="#" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Pré-Inscription</a></li>
+                <li><a href="#" class="text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition duration-300">Nous contacter</a></li>
+              </ul>
             </div>
+          </div>
+      
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+            <ul class="flex flex-col space-y-2 text-lg font-semibold">
+              <li><a href="index.html" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Accueil</a></li>
+              <li><a href="decouvrir.html" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Découvrir la crèche</a></li>
+              <li><a href="#" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Équipe</a></li>
+              <li><a href="#" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Pré-Inscription</a></li>
+              <li><a href="#" class="block text-[#6C8B92] px-4 py-2 rounded-lg hover:bg-[#F4CBB2] hover:text-white transition">Nous contacter</a></li>
+            </ul>
+          </div>
         </nav>
+      
+        <script>
+          const menuBtn = document.getElementById('menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+      
+          menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+        </script>
       </header>
 <section class="relative py-20">
     <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
@@ -42,7 +78,7 @@
 
         <!-- Logo -->
         <div class="md:w-1/2 mt-10 md:mt-0">
-            <img src="./images/logo-site.png" class="rounded-lg shadow-lg">
+            <img src="ChatGPT Image 24 avr. 2025 à 14_04_05.png" alt="Logo Les P’tits Bateaux" class="rounded-lg shadow-lg">
         </div>
     </div>
 </section>
